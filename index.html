@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0" >
+        <title>L4Life</title>
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body class="bg-l4life">
+        <header class="menu">
+            <img class="img-logo" src="./assets/img/logo.png" alt="Logo da L4Life">
+            <nav>
+                <ul>
+                    <li class="menu__link"><a href="#quemSomos">Quem Somos</a></li>
+                    <li class="menu__link"><a href="#destaques">Destaques</a></li>
+                    <li class="menu__link"><a href="#comoFazemos">Como Fazemos</a></li>
+                    <li class="menu__link"><a href="#faleConosco">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <img class="banner" src="./assets/img/banner.jpeg" alt="Banner L4Life">
+        
+        <main>
+            <div class="jumbotron jumbotron-fluid teste" id="quemSomos">
+                <h1 class="titulo-principal">Quem somos</h1>
+                <div class="container">
+                    <p class="lead">A F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias. Foi fundada em 2022 em Recife, e conta com o apoio de importantes investidores nacionais e internacionais.</p>
+                    
+                    <p class="lead">Similar aos modelos de Quinto Andar e Loft, a empresa realiza reformas e prepara moradias para recepção de pessoas universitárias em um ambiente específico e otimizado para a vida de graduação.</p>
+                </div>
+            </div>
+
+            <section id="destaques">
+                <h2 class="titulo-principal">Destaques</h2>
+                <div class="card-columns container">
+                    <div class="card grow" style="width: 20rem;">
+                        <img src="./assets/img/destaques1.jpg" class="card-img-top" style="border-radius: 20px 20px 0 0" alt="Apartamento Campo Grande">
+                        <div class="card-body">
+                            <h5 class="card-title">R$ 450,00</h5>
+                            <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> Rua Oliveira Fonseca, Campo Grande</p>
+                            <p class="card-text">8 m² | 1 vaga</p>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="card grow" style="width: 20rem;">
+                        <img src="./assets/img/destaques2.jpeg" class="card-img-top" style="border-radius: 20px 20px 0 0" alt="Apartamento Boa Viagem I">
+                        <div class="card-body">
+                            <h5 class="card-title">R$ 400,00</h5>
+                            <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> Avenida Ribeiro de Brito, Boa Viagem</p>
+                            <p class="card-text">12 m² | 2 vagas</p>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="card grow" style="width: 20rem;">
+                        <img src="./assets/img/destaques3.jpg" class="card-img-top" style="border-radius: 20px 20px 0 0" alt="Apartamento Boa Viagem II">
+                        <div class="card-body">
+                            <h5 class="card-title">R$ 500,00</h5>
+                            <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> Avenida Domingos Ferreira, Boa Viagem</p>
+                            <p class="card-text">10 m² | 1 vaga</p>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-destaques">
+                    <button type="button" id="maisQuartos" class="btn-l4life" onclick="displayAbout()">Ver mais quartos</button>
+                </div>
+            </section>
+
+            <section id="comoFazemos">
+                <div class="mb-5">
+                    <h2 class="titulo-principal">Como fazemos</h2>
+                    <p class="text-center texto-titulo-principal">Por que é mais fácil alugar na L4Life?</p>
+                </div>
+                <div class="container conteudo-cf">
+                    <img src="./assets/img/como-fazemos.png" alt="Imagem Como Fazemos" class="img-cf">
+                    <div>
+                        <div>
+                            <p class="titulo-cf">Encontre o quarto ideal</p>
+                            <p class="texto-cf">Faça uma busca pelos nossos quartos disponíveis, observe se as características estão dentro das suas expectativas e selecione a melhor opção!
+                            </p>
+                        </div>
+                        <div>
+                            <p class="titulo-cf">Segurança na decisão</p>
+                            <p class="texto-cf">Possuímos verificação de autenticidade e qualidade dos quartos oferecidos para garantir que você utilize o que realmente buscou e fazer uma escolha tranquila e segura!</p>
+                        </div>
+                        <div>
+                            <p class="titulo-cf">Sem complicação e tudo digital</p>
+                            <p class="texto-cf">Após escolher o quarto ideal, você envia sua documentação através do nosso site e escolhe sua melhor forma de pagamento, que pode ser parcelado no cartão de crédito ou em boleto, pix ou transferência bancária. Pronto, é só aproveitar sua nova estadia!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="faleConosco" class="container">
+                <h2 class="titulo-principal">Fale conosco</h2>
+                <div class="formContainer">
+                    <form>
+                        <fieldset>
+                            <legend for="email">Email</legend>
+                            <input type="text" id="email" class="input-padrao" onkeyup="validaEmail()" placeholder="seuemail@dominio.com">
+                            <div id="txtEmail"></div>
+                        </fieldset>
+                        <fieldset>
+                            <legend for="mensagem">Mensagem</legend>
+                            <textarea cols="60" rols="10" id="assunto" class="input-padrao" onkeyup="validaAssunto()"></textarea>
+                            <div id="txtAssunto"></div>
+                        </fieldset>
+                        <input type="submit" id="button" class="btn-l4life" onclick="enviar()" value="Enviar formulário" >
+                    </form>
+                </div>
+            </section>
+            <script src="./assets/scripts/main.js"></script>
+        </main>
+        <footer>
+            <div class="container-footer">
+                <div>
+                    <img class="img-logo" src="./assets/img/logo.png" alt="Logo da L4Life">
+                </div>
+                
+                <div class="footer-social-network">
+                    <p>Fique por dentro das novidades da L4life.</p>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <i class="fa fa-facebook-square fa-3x fa-color" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="fa fa-instagram fa-3x fa-color" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/" target="_blank">
+                                <i class="fa fa-linkedin-square fa-3x fa-color" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank">
+                                <i class="fa fa-twitter-square fa-3x fa-color" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/" target="_blank">
+                                <i class="fa fa-youtube-square fa-3x fa-color" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+            <hr>
+            <div class="footer-copy">
+                <p>&copy; 2022 L4Life - Todos os direitos reservados</p>
+            </div>
+        </footer>
+    </body>
+</html>
+

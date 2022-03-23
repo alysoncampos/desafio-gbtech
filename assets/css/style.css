@@ -1,0 +1,284 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #EDF6FC;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Botão L4Life */
+.btn-l4life {
+    width: 50%;
+    padding: 15px 0;
+    background: #6ddad3;
+    color: #132235;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.btn-l4life:hover {
+    background: #132235;
+    color: #6ddad3;
+}
+/* /Botão L4Life */
+
+/* Cabeçalho */
+.menu {
+    width: 100%;
+    background: #132235;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-logo {
+    height: 100px;
+}
+
+.menu ul {
+    margin-bottom: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 0 16px;
+}
+
+.menu ul li a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+} 
+
+.menu ul li a:hover {
+    color: #6ddad3;
+    text-decoration: none;
+}
+/* /Cabeçalho */
+
+.banner {
+    width: 100%;
+}
+
+/* Main */
+.jumbotron {
+    background: #d6f3f9;
+}
+
+.lead {
+    text-align: justify;
+    font-weight: 400;
+}
+
+/* Destaques */
+#destaques {
+    padding: 3em;
+    width: 100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.card-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    position:static;
+    background-color: #EDF6FC;
+    opacity: 1;
+    transition: 400ms;
+    margin-top: 20px;
+    border-radius: 20px;
+    border-color: #132235;
+    box-shadow: 7px 5px 5px ;
+}
+
+.card:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.btn-destaques {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.btn-destaques button {
+    width: 30%;
+}
+/* /Destaques */
+
+/* Como fazemos */
+#comoFazemos {
+    padding: 40px;
+}
+
+.texto-titulo-principal {
+    font-size: 2rem;
+    color: #536470;
+}
+
+.conteudo-cf {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.img-cf {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.titulo-cf {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.texto-cf {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #536470;
+    text-align: justify;
+}
+/* /Como fazemos */
+
+/* Contato */
+.formContainer {
+    display: grid;
+    justify-content: center;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+    margin-bottom: 5em;
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 100%;
+}
+
+/* /Contato */
+/* /Main */
+
+/* Footer */
+footer {
+    background: #132235;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-social-network p {
+    color: #6ddad3;
+}
+
+.footer-social-network ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-social-network li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.fa-color {
+    color: white;
+}
+
+.fa-facebook-square:hover {
+    color: #3b5998;
+}
+
+.fa-instagram:hover{
+    color: #c13584;
+}
+
+.fa-linkedin-square:hover {
+    color: #0072b1;
+}
+
+.fa-twitter-square:hover {
+    color: #1D9BF0
+}
+
+.fa-youtube-square:hover {
+    color: #c4302b
+} 
+
+hr {
+    background-color: #6ddad3;
+}
+
+.footer-copy {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    padding-bottom: 15px;
+}
+
+.footer-copy p {
+    margin-bottom: 0;
+}
+/* /Footer */
+
+@media screen and (max-width: 1024px){
+    .img-cf {
+        display: none;
+    }
+
+    .container-footer {
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }
+
+    .btn-destaques button {
+        width: 80%;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu__link {
+        font-size: 1.1rem;
+
+        display: inline-block;
+
+        margin-right: .7rem;
+        margin-bottom: 1.25rem;
+        margin-left: .7rem;
+    }
+}
+
